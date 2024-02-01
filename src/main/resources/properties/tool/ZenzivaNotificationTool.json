@@ -1,0 +1,61 @@
+[
+  {
+    "title": "@@zenzivaNotificationTool.title@@",
+    "properties": [
+      {
+        "label": "@@zenzivaNotificationTool.settings@@",
+        "type": "header"
+      },
+      {
+        "name": "baseUrl",
+        "label": "@@zenzivaNotificationTool.baseUrl@@",
+        "type": "textfield",
+        "value": "",
+        "required": "true"
+      },
+      {
+        "name": "userKey",
+        "label": "@@zenzivaNotificationTool.userKey@@",
+        "type": "textfield",
+        "required": "true"
+      },
+      {
+        "name": "apiKey",
+        "label": "@@zenzivaNotificationTool.apiKey@@",
+        "type": "textfield",
+        "required": "true"
+      },
+      {
+        "label": "@@zenzivaNotificationTool.message@@",
+        "type": "header"
+      },
+      {
+        "name": "messageType",
+        "label": "@@zenzivaNotificationTool.messageType@@",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "regularSms",
+            "label": "@@zenzivaNotificationTool.messageType.regularSms@@"
+          },
+          {
+            "value": "regularWhatsapp",
+            "label": "@@zenzivaNotificationTool.messageType.regularWhatsapp@@"
+          }
+        ]
+      },
+      {
+        "name": "toPhone",
+        "label": "@@zenzivaNotificationTool.toPhone@@",
+        "type": "textfield",
+        "required": "true"
+      },
+      {
+        "name": "message",
+        "label": "@@zenzivaNotificationTool.message@@",
+        "type": "textarea",
+        "required": "true"
+      }
+    ]
+  }
+]
