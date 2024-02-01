@@ -58,13 +58,13 @@ public class ZenzivaNotificationTool extends DefaultApplicationPlugin {
             // regular SMS
             if (messageType.contains("regularSms")) {
                 final RegularSmsResponse response = client.executePostRegularSms(toPhone, message);
-                LogUtil.info(getClass().getName(), "Response : to [" + response.getTo() + "] message [" + response.getMessageId() + "] response [" + response.getText() + "]");
+                LogUtil.info(getClass().getName(), "RegularSmsResponse : to [" + response.getTo() + "] status [" + response.getStatus() + "] messageId [" + response.getMessageId() + "] response [" + response.getText() + "]");
             }
 
             // regular Whatsapp
             if (messageType.contains("regularWhatsapp")) {
                 final RegularWhatsappResponse response = client.executePostRegularWhatsapp(toPhone, message);
-                LogUtil.info(getClass().getName(), "Response : to [" + response.getTo() + "] message [" + response.getMessageId() + "] response [" + response.getText() + "]");
+                LogUtil.info(getClass().getName(), "RegularWhatsappResponse : to [" + response.getTo() + "] status [" + response.getStatus() + "] messageId [" + response.getMessageId() + "] response [" + response.getText() + "]");
             }
 
         } catch (ResponseException | RequestException e) {
