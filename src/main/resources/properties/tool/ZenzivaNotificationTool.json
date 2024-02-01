@@ -10,7 +10,7 @@
         "name": "baseUrl",
         "label": "@@zenzivaNotificationTool.baseUrl@@",
         "type": "textfield",
-        "value": "",
+        "value": "https://console.zenziva.net",
         "required": "true"
       },
       {
